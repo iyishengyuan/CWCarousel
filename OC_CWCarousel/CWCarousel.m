@@ -515,8 +515,8 @@
  */
 - (NSInteger)numbers {
     if(self.datasource &&
-       [self.datasource respondsToSelector:@selector(numbersForCarousel)]) {
-        self.pageControl.numberOfPages = [self.datasource numbersForCarousel];
+       [self.datasource respondsToSelector:@selector(numbersForCarousel:)]) {
+        self.pageControl.numberOfPages = [self.datasource numbersForCarousel:self];
         return self.pageControl.numberOfPages;
     }
     return 0;
