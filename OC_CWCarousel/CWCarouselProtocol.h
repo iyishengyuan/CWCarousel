@@ -47,7 +47,7 @@
 
  @return 轮播图展示个数
  */
-- (NSInteger)numbersForCarousel;
+- (NSInteger)numbersForCarousel:(CWCarousel *)carousel;
 /**
  自定义每个轮播图视图
 
